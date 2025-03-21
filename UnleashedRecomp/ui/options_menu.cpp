@@ -1272,6 +1272,7 @@ static void DrawConfigOptions()
             DrawConfigOption(rowCount++, yOffset, &Config::ResolutionScale, true, nullptr, 0.25f, 1.0f, 2.0f);
             DrawConfigOption(rowCount++, yOffset, &Config::Fullscreen, true);
             DrawConfigOption(rowCount++, yOffset, &Config::VSync, true);
+            DrawConfigOption(rowCount++, yOffset, &Config::TripleBuffering, true); // TODO: Needs translation
             DrawConfigOption(rowCount++, yOffset, &Config::FPS, true, nullptr, FPS_MIN, 120, FPS_MAX);
             DrawConfigOption(rowCount++, yOffset, &Config::Brightness, true);
             DrawConfigOption(rowCount++, yOffset, &Config::AntiAliasing, Config::AntiAliasing.InaccessibleValues.size() != 3, &Localise("Options_Desc_NotAvailableHardware"));
